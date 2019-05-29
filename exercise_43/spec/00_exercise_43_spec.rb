@@ -1,4 +1,4 @@
-_4require "exercise_43"
+require "exercise_43"
 
 describe "Exercise 43:" do
   describe "average" do
