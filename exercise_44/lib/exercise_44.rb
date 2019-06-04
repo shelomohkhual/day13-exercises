@@ -61,5 +61,12 @@ def substrings(string)
 end
 
 def palindrome_substrings(string)
-    
+    palsub = []
+    sub = substrings(string)
+    sub.each do |x|
+        if palindrome?(x) && x.length > 1
+            palsub.push x
+        end
+    end
+    return palsub
 end
