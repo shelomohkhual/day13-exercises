@@ -41,7 +41,7 @@ def vowel_counts(string)
     string=string.downcase
     string=string.gsub(/[^aeiou]/,"")
     string=string.split("")
-    string.each.reduce(Hash.new(0)) {|c,f| c[f] += 1; c}
+    string.each.reduce(Hash.new(0)) {|c,f| c[f] += 1 }
 end
 
 def caesar_cipher(message,num)

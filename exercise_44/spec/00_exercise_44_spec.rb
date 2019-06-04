@@ -128,7 +128,7 @@ describe "Exercise 44:" do
     it "should accept a string as an arg" do
       expect { palindrome_substrings("abracadabra") }.to_not raise_error
     end
-
+ 
     it "should return an array containing all substrings that are palindromes and longer than 1 character" do
       expect(palindrome_substrings("abracadabra")).to match_array ["aca", "ada"]
       expect(palindrome_substrings("madam")).to match_array ["madam", "ada"]
